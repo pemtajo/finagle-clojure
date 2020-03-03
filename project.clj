@@ -6,7 +6,8 @@
   :scm {:name "git" :url "https://github.com/nubank/finagle-clojure"}
   :dependencies [[finagle-clojure/core "0.8.0-NUBANK"]
                  [finagle-clojure/thrift "0.8.0-NUBANK"]
-                 [finagle-clojure/http "0.8.0-NUBANK"]]
+                 [finagle-clojure/http "0.8.0-NUBANK"]
+                 [finagle-clojure/http2 "0.8.0-NUBANK"]]
   :plugins [[lein-sub "0.3.0"]
             [codox "0.8.10"]
             [lein-midje "3.2"]]
