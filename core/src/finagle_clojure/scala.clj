@@ -2,7 +2,7 @@
   "Utilities for interop with JVM classes generated from Scala code.
   Scala functions & methods expect Scala collection & function instances,
   not Java Collections or Clojure IFns."
-  (:import [scala.collection JavaConversions Map]
+  (:import [scala.jdk CollectionConverters]
            [scala Product]
            [scala.runtime BoxedUnit]))
 
@@ -19,7 +19,7 @@
 
     A Scala Buffer with the contents of `seq`."
   [seq]
-  (-> seq JavaConversions/asScalaBuffer .toList))
+  (-> seq CollectionConverters/asScalaBuffer .toList))
 
 (defn scala-seq->vec
   "Convert a Scala Seq to a vector.
