@@ -13,8 +13,4 @@
   :repositories [["nu-maven" {:url "s3p://nu-maven/releases/"}]]
   :deploy-repositories [["releases" {:url "s3p://nu-maven/releases/" :no-auth true}]]
   :dependencies [[com.twitter/finagle-core_2.13 "22.7.0"]
-<<<<<<< Updated upstream
-=======
-                 [io.github.erp12/fijit "1.0.8"]
->>>>>>> Stashed changes
                  [org.clojure/algo.monads "0.1.6"]])
