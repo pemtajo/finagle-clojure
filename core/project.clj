@@ -13,4 +13,5 @@
   :repositories [["nu-maven" {:url "s3p://nu-maven/releases/"}]]
   :deploy-repositories [["releases" {:url "s3p://nu-maven/releases/" :no-auth true}]]
   :dependencies [[com.twitter/finagle-core_2.13 "22.7.0"]
+                 [com.twitter/finagle-netty4_2.13 "22.7.0"]
                  [org.clojure/algo.monads "0.1.6"]])
