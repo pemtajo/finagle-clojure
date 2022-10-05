@@ -14,4 +14,8 @@
   :deploy-repositories [["releases" {:url "s3p://nu-maven/releases/" :no-auth true}]]
   :dependencies [[com.twitter/finagle-core_2.13 "22.7.0"]
                  [com.twitter/finagle-netty4_2.13 "22.7.0"]
+                 [io.github.erp12/fijit "1.0.8"]
+                 [org.scala-lang/scala-reflect "2.13.6"]
+                 [org.scala-lang/scala-library "2.13.6"]
+                 [org.scala-lang/scala-compiler "2.13.6"]
                  [org.clojure/algo.monads "0.1.6"]])
