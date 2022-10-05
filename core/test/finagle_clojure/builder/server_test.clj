@@ -11,7 +11,6 @@
     (f/value nil)))
 
 (facts "We have a ListeningServer"
-       (let [listener (server/netty4listener)
-             server (.listen listener (server/address 3003) (server/dispatcher-builder empty-service))]
+       (let [server (server/server empty-service 3050)]
          (ancestors (class server)) => (contains ListeningServer)
          (f/await (server/close! server)) => scala/unit))

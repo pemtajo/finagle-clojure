@@ -40,7 +40,7 @@
   (InetSocketAddress. (int p)))
 
 (defn ^ListeningServer server
-  [service port]
+  [^Service service port]
   (let [server (.listen (netty4listener) (address port) (dispatcher-builder service))]
     server))
 
